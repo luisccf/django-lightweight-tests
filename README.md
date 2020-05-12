@@ -51,7 +51,7 @@ Then, when you run your tests, pass the option `--light`:
 python manage.py test --light
 ```
 
-You can change the arg name when instanciating the class:
+You can change the arg name when instantiating the class:
 ```python
 LightweightTest(cmd_option='--opt')
 ```
