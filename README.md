@@ -26,6 +26,15 @@ Decreases Django overhead when debugging is activated.
 #### SQLite
 Run tests using SQLite.
 
+## How to install
+Add this line to your `requirements.txt`:
+```
+-e git+https://github.com/luisccf/django-lightweight-tests.git#egg=django-lightweight-tests
+```
+Then simply run
+```
+pip install -r requirements.txt
+```
 
 ## How to use
 Add the following code to your `manage.py`:
@@ -46,7 +55,7 @@ execute_from_command_line(sys.argv)
 
 How you check if you are running your tests depends on your test runner. We run our tests using `python manage.py test`, so this check works for us.
 
-Then, when you run your tests, pass the option `--light`:
+When you run your tests, pass the option `--light`:
 ```sh
 python manage.py test --light
 ```
